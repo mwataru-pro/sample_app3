@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+@import "summernote-bs4";
+
+.image {
+  width: 520px; 
+  height: 800px; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-image: url(demo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+}
+
+
+.l-wrapper {
+  padding: 280px 30px 50px 50px;
+  position: relative; 
+  width: calc(100% - 520px); 
+  left: 520px;
+}
+
+.nav{
+  text-align: right; 
+  position: absolute; 
+  top: 60px; 
+  right: 60px;
+}
+
+.nav-list{
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 18px;
+  font-weight: bold;
+}

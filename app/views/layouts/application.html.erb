@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SampleApp3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="image"></div>
+
+    <div class="l-wrapper">
+      <header id="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>Top</li>
+            <li>About</li>
+            <li>Contents</li>
+            <li>Plants</li>
+          </ul>
+        </nav>
+      </header><!-- /header -->
+      <%= yield %>
+    </div>
+  </body>
+</html>
