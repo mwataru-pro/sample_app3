@@ -15,6 +15,7 @@
  */
 @import "bootstrap";
 @import "summernote-bs4";
+@import "summernote-custom-theme.min";
 
 .image {
   width: 520px; 
@@ -27,10 +28,6 @@
   background-position: center;
 }
 
-.header {
-  position: fixed;
-}
-
 
 .l-wrapper {
   padding: 280px 30px 50px 50px;
@@ -41,7 +38,7 @@
 
 .nav{
   text-align: right; 
-  position: absolute; 
+  position: fixed; 
   top: 60px; 
   right: 60px;
 }
